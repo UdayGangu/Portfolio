@@ -26,6 +26,8 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  height: 100%;
+  width: 100%;
 }
 
 section {
@@ -534,17 +536,29 @@ span {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
   html {
     font-size: 50%;
   }
 
-  .contact form .input-card input {
-    width: 100%;
+  .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  section {
-    padding: 22px;
+  .home-container{
+    margin-top: 10px;
+    text-align: center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact form .input-card input {
+    width: 100%;
   }
 
   .about-container p {
