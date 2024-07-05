@@ -26,8 +26,6 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  height: 100%;
-  width: 100%;
 }
 
 section {
@@ -78,6 +76,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+}
+
+.profile-picture{
+  height: auto; 
+  width: 100%; 
+  max-width: 250px; 
+  border-radius: 50%; 
 }
 
 .home-container h3 {
@@ -465,6 +471,12 @@ span {
     display: block;
   }
 
+  .header{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+  }
+
   .navbar-container {
     position: absolute;
     top: 100%;
@@ -541,16 +553,22 @@ span {
     font-size: 50%;
   }
 
-  .home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  body{
+    width: 100%;
   }
 
+  .profile-picture{
+    height: 200px;
+    width: 190px;
+  }
+
+  .name{
+    display: flex;
+    align-self: flex-start;
+  }
   .home-container{
     margin-top: 10px;
-    text-align: center ;
+    /* text-align: center ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -568,6 +586,10 @@ span {
     height: 80px;
     width: 80px;
     margin: 12px;
+  }
+
+  .service{
+    padding: 0;
   }
 
   .certificates-card img {
